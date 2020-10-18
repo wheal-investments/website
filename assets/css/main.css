@@ -1,0 +1,170 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Droid Serif", serif; }
+
+header {
+  background-color: #F3F3F3;
+  background-image: url("/assets/img/header-background.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  header .logo {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    width: 100%;
+    display: block;
+    padding-top: 20vh; }
+  header h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    color: white;
+    text-align: center;
+    font-size: 1.8em;
+    margin-top: 5vh; }
+
+.background-change {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0; }
+
+.main-contents {
+  background-color: white;
+  z-index: 10000;
+  margin-top: -15px;
+  padding-top: 30px; }
+  .main-contents p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px; }
+  .main-contents .row {
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box; }
+  .main-contents .company {
+    flex: 33.33%;
+    box-sizing: border-box;
+    padding: 40px; }
+    .main-contents .company .background {
+      width: 100%;
+      height: 425px;
+      border-radius: 14px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: block;
+      text-decoration: none; }
+      .main-contents .company .background .coming-soon {
+        font-size: 22px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        padding-top: 190px;
+        display: none; }
+      .main-contents .company .background:hover {
+        box-shadow: inset 0px 0px 100px rgba(0, 0, 0, 0.85); }
+        .main-contents .company .background:hover img {
+          display: none; }
+        .main-contents .company .background:hover .coming-soon {
+          display: block; }
+      .main-contents .company .background img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        padding-top: 175px; }
+    .main-contents .company .wheal-investments {
+      background-image: url("/assets/img/wheal-investments-background.jpg"); }
+    .main-contents .company .wheal-ventures {
+      background-image: url("/assets/img/wheal-ventures-background.jpg"); }
+    .main-contents .company .wheal-developments {
+      background-image: url("/assets/img/wheal-developments-background.jpg"); }
+
+.wheal-group-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 520px;
+  width: 100%; }
+
+footer {
+  text-align: center;
+  margin: 40px 0; }
+  footer p {
+    font-size: 14px; }
+
+@media (max-width: 1000px) {
+  .message {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box; }
+  .main-contents .row {
+    display: block; }
+  .photo {
+    float: none;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto; }
+    .photo img {
+      max-width: 390px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block; } }
