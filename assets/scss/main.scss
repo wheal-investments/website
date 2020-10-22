@@ -3,6 +3,7 @@
 
 body {
   font-family: $main-font;
+  min-height: -webkit-fill-available;
 }
 
 header {
@@ -12,6 +13,10 @@ header {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
+
+  @supports (-webkit-touch-callout: none) {
+    height: -webkit-fill-available;
+  }
 
   .logo {
     margin-left: auto;

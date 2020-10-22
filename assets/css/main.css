@@ -46,7 +46,8 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: "Droid Serif", serif; }
+  font-family: "Droid Serif", serif;
+  min-height: -webkit-fill-available; }
 
 header {
   background-color: #F3F3F3;
@@ -55,6 +56,9 @@ header {
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat; }
+  @supports (-webkit-touch-callout: none) {
+    header {
+      height: -webkit-fill-available; } }
   header .logo {
     margin-left: auto;
     margin-right: auto;
